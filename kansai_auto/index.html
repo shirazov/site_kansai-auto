@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name"viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Автосервис КАНСАЙ</title>
+	<link rel="stylesheet" href="master.css">
+</head>
+<body>
+	<header>
+		<div id="logo" onclick="slowScroll('#top')">
+			<span>АвтоКАНСАЙ <img class="center" src="img/ико.png" width="36px" height="36px"></span>
+		</div>
+		<div id="about">
+			<a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
+      		<a href="#" onclick="slowScroll('#overview')" title="Преимущества">Услуги</a>
+      		<a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+      		<a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">ЧаВо?</a>
+		</div>
+	</header>
+
+	<div id="top">
+		<h1>Ремонт автомобилей</h1>
+		<h3>качественно и надолго</h3>
+	</div>
+
+	<div id="main"  title="Возможности">
+		<div class="intro">
+			<h2>Авто Кансай поможет вам!</h2>
+			<span><center> Мы гарантируем:</center></span>
+		</div>
+		<div class="text">
+			<span>Быстроту выполнения работ, низкую стоимость, а главное качественное обслуживание, и плюс ко всему мы даём гарантии на каждую проделанную нами работу.<br><br>
+У нас специалисты c многолетним опытом, и мы гарантируем грамотный подход к каждой мелочи.</span>
+		</div>
+	</div>
+
+	<div id="overview">
+		<h2>Предлагаемые Услуги</h2>
+		<h4>Самые востребованные услуги на данный момент:</h4>
+
+
+		<div class="img">
+			<img src="https://москва-тюнинг.рф/netcat_files/multifile/402/hpb2.jpg"  alt="">
+			<span>Ремонт тормозной системы <span></span></span>
+		</div>
+		<div class="img">
+			<img src="https://p0.zoon.ru/preview/IqvXy5uFD7u1eMEWLULsBQ/2000x1333x75/1/3/7/original_5e0393db7e19896d7d6d23a4_5ed7b744d57f9.jpg"  alt="">
+			<span>Замена масла <span></span></span>
+		</div>
+		<div class="img">
+			<img src="https://service2.моторист.москва/images/onepage/main4.jpg" alt="">
+			<span>Ремонт двигателя <span></span></span>
+		</div>
+		<div class="img">
+			<img src="https://images.ru.prom.st/718243881_w640_h640_mehanizmy-upravleniya.jpg" alt="">
+			<span>Ремонт рулевого управления<span></span></span>
+		</div>
+		<div class="img">
+			<img src="img/cjr.jpg" alt="Коробка прердач в ремонте">
+			<span> Ремонт трансмиссии<span></span></span>
+		</div>
+	
+		<div class="img">
+			<img src="https://brit03.ru/wp-content/uploads/programma-dlya-diagnostiki-avtomobilya-cherez-noutbuk-apptoday-ru.jpg" alt="">
+			<span>Компьютерная диагностика<span></span></span>
+		</div>
+	</div>
+
+	<div id="contacts">
+    <center><h5>Обратная связь</h5></center>
+    <form id="form_input">
+
+    	<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="АвтоКАНСАЙ">
+		<input type="hidden" name="admin_email" value="shirazov2002@gmail.com">
+		<input type="hidden" name="form_subject" value="Заявка на ремонт или Вопрос">
+		<!-- END Hidden Required Fields -->
+
+	    	<label for="Имя отправителя">Имя <span>*</span></label><br>
+	   	<input type="text" placeholder="Введите имя" name="name" id="name"><br>
+
+	      	<label for="Эл.почта">Ваша почта <span>*</span></label><br>
+		<input type="email" placeholder="Введите email" name="email" id="email"><br>
+
+			<label for="Сообщение">Сообщение <span>*</span></label><br>
+		<textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+			<!-- <div id="mess_send" class="btn">Отправить</div> -->
+			<button id="mess_send" class="btn">Отправить!</button>
+    </form>
+  </div>
+
+<div id="karta">
+	<center><h5>Контакты</h5></center>
+
+	<div id="address">
+		Страна: Россия<br>
+        Город: Красноярск<br>
+        Адрес: Грунтовая 25 строение 2<br>Эл.почта: <a href="mailto:" class="color2">master-erali@mail.ru</a>
+		<br>Телефон: +7 (962) 070-58-66 
+		<a href="tel:+7 (962) 070-58-66 "> <button class="button">Звонок</button></a>
+		</div>  <br>   
+
+	<p><div class="map">
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A687cc6fd35ebc4ea42055b80798d1c51a380a69384e956a685296f717d5551ca&amp;width=width&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+	</div>
+	</p>
+</div>
+
+  <div id="faq">
+    <div>
+      <span class="title">Оплата</span><br>
+      <span class="heading">Как будет проходит оплата?</span>
+      <p>Оплата происходит только после завершения всех работ, наличными, а также безналом. Принимаются все виды банковских карт действующих в РФ.</p>
+      <span class="heading">Оплата за приобретённые запчасти и аксессуары</span>
+      <p>Оплачивается в приобретённом магазине или же может быть включена в чек с проделанными услугами.</p>
+      <span class="heading">Валюта</span>
+      <p>Мы принимаем местную валюту, то есть рубли, но при желании можем принять и евро\доллар</p>
+    </div>
+    <div>
+      <span class="title">Информация</span><br>
+      <span class="heading">Что входит в услуги сервиса?</span>
+      <p> От базовой диагностики до сложного кузовного ремонта. Наши сервисы рядом с вами на правом и левом берегу Красноярска. </p>
+      <span class="heading">Запасные части</span>
+      <p>Вы можете привезти свои, но у нас лучшие поставщики и гарантии правильного подбора.</p>
+      <span class="heading">Честное ценообразование</span>
+      <p>Оговоренные цены не меняем после ремонта. Это наше правило уже 12 лет.</p>
+    </div>
+    <div>
+      <span class="title">Гарантии</span><br>
+      <span class="heading">Какие гарантии есть?</span>
+      <p>Квалифицированные мастера. Наши мастера – профессионалы с большой буквы. Минимальный опыт от 5-ти лет и мы постоянно обучаемся.</p>
+      <span class="heading">Качественное оборудование и спец. инструмент</span>
+      <p>Мы используем сертифицированное оборудование и материалы лучших мировых брендов</p>
+      <span class="heading">Безопасность</span>
+      <p>На время ожидания перед и после выполнения работ, ваш автомобиль будет под наблюдением и круглосуточной охраной.</p>
+    </div>
+  </div>
+<div id="podval">
+	<p>© 2021 <b>АвтоКАНСАЙ</b>. Все права защищены. Создатель сайта <a ркуа="https://vk.com/izikovavraam"> <span>Ширазов Хуршид</span></a></p>
+</div>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script>
+	function slowScroll(id){
+		$('html, body').animate({
+			scrollTop: $(id).offset().top
+		}, 500);
+	}
+
+	$(document).on("scroll", function () {
+		if($(window).scrollTop() === 0)
+			$("header").removeClass("fixed");
+		else
+			$("header").attr("class","fixed");
+	});
+</script>
+<script src="script1.js"></script>
+<script type="script1.js"></script>
+</body>
+</html>
